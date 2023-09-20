@@ -1,0 +1,36 @@
+ body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .con{
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  width:256px;
+  text-align: center;
+  border: 3px solid rgba(36, 35, 35, 0.479);
+  border-radius: 5px;
+ }
+
+ .keypad{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(60px, auto);
+ }
+
+ input[type="text"]{
+ height: 55px;
+ width:250px;
+ color: brown;
+ text-align:right ;
+ }
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
